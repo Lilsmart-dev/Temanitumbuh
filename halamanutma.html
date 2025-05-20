@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temani Tumbuh - Bantu Anak Tumbuh Benar</title>
+  <style>
+    /* Reset sederhana */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f9f4;
+      color: #2a7f62;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 15px 50px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 15px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    header p.subtitle {
+      font-size: 1.15rem;
+      color: #4a7d64;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-primary {
+      background-color: #2a7f62;
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      margin-bottom: 50px;
+    }
+    .btn-primary:hover {
+      background-color: #23644f;
+    }
+    section.why {
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 0 15px;
+    }
+    section.why h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    section.why p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      color: #3c6e58;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 60px;
+      padding: 0 10px;
+    }
+    .feature-item {
+      background: white;
+      flex: 1 1 250px;
+      max-width: 300px;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 15px rgba(42,127,98,0.15);
+      text-align: center;
+      color: #2a7f62;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .feature-item span.emoji {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      color: #607d6e;
+      font-size: 0.9rem;
+      padding: 20px 10px 10px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .features {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .feature-item {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 Temani Tumbuh</h1>
+      <p class="subtitle">Bantu Anak Tumbuh Benar, Bukan Sekadar Pintar.</p>
+      <a href="#tes" class="btn-primary">Mulai Tes Sekarang</a>
+    </header>
+
+    <section class="why">
+      <h2>🤔 Kenapa Temani Tumbuh Hadir?</h2>
+      <p>Kami percaya setiap anak unik dan layak dipahami — bukan dipaksa.</p>
+      <p>🎈 Dengan Temani Tumbuh, kamu bisa:</p>
+      <p>❤️ Memahami anak tanpa tekanan<br />
+         🧩 Memberi aktivitas ringan tapi bermakna<br />
+         🏫 Memilih sekolah yang cocok, bukan hanya yang terkenal</p>
+    </section>
+
+    <section class="features" id="tes">
+      <div class="feature-item">
+        <span class="emoji">🧠</span>
+        Tes Gaya Belajar Anak<br />
+        Cari tahu apakah anak lebih nyaman belajar lewat visual, gerak, atau suara.<br />
+        <a href="tes-gaya-belajar.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+      </div>
+      <div class="feature-item">
+        <span class="emoji">🎨</span>
+        Tes Minat & Bakat Dasar<br />
+        Kenali kecenderungan alamiah anak agar bisa diarahkan tanpa paksaan.<br />
+        <a href="tes-minat-bakat.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+      </div>
+      <div class="feature-item">
+        <span class="emoji">💬</span>
+        Tes Kepribadian Anak<br />
+        Apakah anak cenderung pemimpin? sensitif? tenang? Pahami supaya pendekatannya tepat.<br />
+        <a href="tes-kepribadian.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+      </div>
+      <div class="feature-item">
+        <span class="emoji">🔊</span>
+        Tes Sensorik Anak<br />
+        Amati apakah anak sangat sensitif terhadap suara, sentuhan, gerakan, atau justru kurang merespons.<br />
+        <a href="tes-sensorik.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes Sensorik</a>
+      </div>
+    </section>
+
+    <section style="max-width: 700px; margin: 0 auto; background: #def1e3; border-radius: 12px; padding: 30px; text-align: center; color: #2a7f62;">
+      <h2>🔒 Fitur Premium: Evaluasi Mendalam Sensorik</h2>
+      <p>📊 Butuh bantuan menyusun rencana stimulasi harian anakmu?<br />
+      Dengan versi Premium, kamu bisa:</p>
+      <ul style="list-style: none; padding-left: 0; text-align: left; margin: 0 auto 20px; max-width: 400px;">
+        <li>✅ Lihat grafik & hasil detail tiap sistem sensorik</li>
+        <li>✅ Dapat rekomendasi aktivitas harian</li>
+        <li>✅ Pantau perkembangan lewat catatan harian</li>
+      </ul>
+      <a href="premium.html" class="btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">Coba Premium Sekarang</a>
+    </section>
+
+    <footer>
+      <p>💬 Semua tes kami gratis dan bisa langsung diisi.<br />Tapi kalau kamu ingin temani tumbuh anak setiap hari — kami siap bantu.</p>
+    </footer>
+  </div>
+</body>
+</html>
