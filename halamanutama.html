@@ -1,100 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temani Tumbuh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temani Tumbuh - Tes Anak</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f8f9fa;
       color: #333;
-      font-size: 2rem; /* 4x lebih besar dari default */
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 4rem;
-      background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 1.5rem 3rem;
       font-size: 1.8rem;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 1rem;
-      margin-top: 2rem;
+    }
+    header {
+      background-color: #e3f6f5;
+      padding: 6rem 3rem;
       text-align: center;
     }
-
-    .btn:hover {
-      background-color: #45a049;
+    header h1 {
+      margin: 0;
+      font-size: 4.5rem;
     }
-
-    .section {
-      margin-bottom: 4rem;
+    header p {
+      font-size: 2.4rem;
+      max-width: 1000px;
+      margin: 2rem auto 0;
     }
-
-    .emoji {
-      font-size: 2.5rem;
+    .container {
+      padding: 6rem 3rem;
+      max-width: 1600px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 4rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 24px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      padding: 4rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 3rem;
+    }
+    .card p {
+      font-size: 2.2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #38b6ff;
+      color: white;
+      padding: 1.5rem 3rem;
+      border: none;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .premium {
+      background-color: #fff3cd;
+      padding: 4rem;
+      margin-top: 6rem;
+      border-radius: 24px;
+    }
+    .premium h3 {
+      font-size: 3rem;
+    }
+    .premium p,
+    .premium li {
+      font-size: 2rem;
+    }
+    .footer-note {
+      margin-top: 4rem;
+      text-align: center;
+      font-style: italic;
+      color: #666;
+      font-size: 2rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Temukan Cara Anak Belajar & Tumbuh Bahagia</h1>
+    <p>Berbagai tes sederhana untuk membantu kamu memahami anak dengan utuh – dari potensi, gaya belajar, sampai kebutuhan sensoriknya.</p>
+  </header>
+
   <div class="container">
-    <div class="section">
-      <p><span class="emoji">💬</span> <strong>Kenapa Harus Mulai Sekarang?</strong><br>
-      Anak tumbuh setiap hari.<br>
-      Jangan tunggu masalah muncul baru mencari solusi.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Tes Gaya Belajar Anak</h3>
+        <p>Cari tahu apakah anak lebih nyaman belajar lewat visual, gerak, atau suara.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Minat & Bakat Dasar</h3>
+        <p>Kenali kecenderungan alamiah anak agar bisa diarahkan tanpa paksaan.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Kepribadian Anak</h3>
+        <p>Apakah anak cenderung pemimpin? sensitif? tenang? Pahami supaya pendekatannya tepat.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Sensorik Anak</h3>
+        <p>Amati apakah anak sangat sensitif terhadap suara, sentuhan, gerakan, atau justru kurang merespons.</p>
+        <a class="btn" href="#">Mulai Tes Sensorik</a>
+      </div>
+      <div class="card">
+        <h3>Tes Pengamatan</h3>
+        <p>Gunakan tes ini untuk mengamati kemampuan anak berdasarkan usia mereka.</p>
+        <a class="btn" href="#">Mulai Tes Pengamatan</a>
+      </div>
+      <div class="card">
+        <h3>Tes Pengamatan Perkembangan Anak</h3>
+        <p>Gunakan tes ini untuk mengamati kemampuan anak berdasarkan usia mereka.</p>
+        <a class="btn" href="#">Mulai Pengamatan</a>
+      </div>
     </div>
 
-    <div class="section">
-      <p><span class="emoji">💡</span> <strong>Cukup 10 menit untuk bantu anak tumbuh utuh —</strong><br>
-      dengan cinta, bukan tekanan.</p>
+    <div class="premium">
+      <h3>?? Evaluasi Mendalam Sensorik (Premium)</h3>
+      <p>?? Butuh bantuan menyusun rencana stimulasi harian anakmu?</p>
+      <ul>
+        <li>Lihat grafik & hasil detail tiap sistem sensorik</li>
+        <li>Dapat rekomendasi aktivitas harian</li>
+        <li>Pantau perkembangan lewat catatan harian</li>
+      </ul>
+      <a class="btn" href="#">Coba Premium Sekarang</a>
     </div>
 
-    <div class="section">
-      <p><span class="emoji">🔍</span> <strong>Observasi Anak = Hadiah Seumur Hidup</strong><br>
-      Temani Tumbuh hadir untuk memudahkanmu mengamati & memahami anak lewat rutinitas harian.<br>
-      Karena bagi kami, setiap momen kecil bersama anak adalah fondasi besar masa depan.</p>
-      <a class="btn" href="https://lilsmart-dev.github.io/Temanitumbuh/tes-sensorik.html">Observasi Anak Sekarang</a>
-    </div>
-
-    <div class="section">
-      <p><span class="emoji">🌱</span> <strong>Dibalik Temani Tumbuh</strong><br>
-      Temani Tumbuh dikembangkan oleh <strong>Siti Rahmawati S.Pd.</strong> – seorang praktisi pendidikan dan pengembang kurikulum anak usia dini yang berbasis data & observasi nyata.<br><br>
-      🎓 Berpengalaman lebih dari 10 tahun mendampingi anak, keluarga, dan guru dalam memahami pola tumbuh anak secara utuh.<br>
-      📊 Seluruh alat tes dan rekomendasi dalam platform ini dirancang berdasarkan pengamatan langsung, data perkembangan anak, serta pendekatan humanistik.</p>
-      <a class="btn" href="#">Lihat Profil Lengkap</a>
-    </div>
-
-    <div class="section">
-      <p><span class="emoji">🔒</span> <strong>Profil Tumbuh Anak (Fitur Premium)</strong><br>
-      Bangun portofolio tumbuh anakmu — lengkap, personal, dan bermanfaat jangka panjang.<br><br>
-      📌 Simpan hasil tes & aktivitas harian<br>
-      📈 Lihat grafik perkembangan & minat anak<br>
-      🎯 Rekomendasi harian yang terus disesuaikan<br>
-      👨👩👧 Bisa dibuka bersama pasangan atau guru.</p>
-      <a class="btn" href="#">Coba Versi Premium</a>
+    <div class="footer-note">
+      ?? Semua tes kami gratis dan bisa langsung diisi. Tapi kalau kamu ingin temani tumbuh anak setiap hari — kami siap bantu.
     </div>
   </div>
 </body>
