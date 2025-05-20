@@ -1,127 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temani Tumbuh</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      font-size: 0.3rem; /* Dikecilkan 10x */
-      padding: 4px;
-      background-color: #f0f9f4;
-      color: #2a7f62;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      font-size: 2rem; /* 4x lebih besar dari default */
       line-height: 1.6;
     }
 
-    h1 {
-      font-size: 0.4rem;
-      margin-bottom: 2px;
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 4rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     }
 
-    .section {
-      margin-bottom: 8px;
-    }
-
-    select, button {
-      font-size: 0.3rem;
-      padding: 2px 4px;
-      margin-top: 4px;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #16794a;
+    h1, h2, h3 {
+      color: #2c3e50;
     }
 
     a {
-      display: inline-block;
-      font-size: 0.3rem;
-      color: #ffffff;
-      background-color: #2a7f62;
-      padding: 2px 4px;
-      margin-top: 4px;
+      color: #0077cc;
       text-decoration: none;
-      border-radius: 2px;
+      font-weight: bold;
     }
 
-    ul {
-      font-size: 0.25rem;
-      padding-left: 6px;
+    .btn {
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      font-size: 1.8rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="section">
+      <p><span class="emoji">💬</span> <strong>Kenapa Harus Mulai Sekarang?</strong><br>
+      Anak tumbuh setiap hari.<br>
+      Jangan tunggu masalah muncul baru mencari solusi.</p>
+    </div>
 
-  <h1>🌱 Temani Tumbuh</h1>
+    <div class="section">
+      <p><span class="emoji">💡</span> <strong>Cukup 10 menit untuk bantu anak tumbuh utuh —</strong><br>
+      dengan cinta, bukan tekanan.</p>
+    </div>
 
-  <div class="section">
-    <p>💬 <span class="highlight">Kenapa Harus Mulai Sekarang?</span><br>
-    Anak tumbuh setiap hari.<br>
-    Jangan tunggu masalah muncul baru mencari solusi.</p>
+    <div class="section">
+      <p><span class="emoji">🔍</span> <strong>Observasi Anak = Hadiah Seumur Hidup</strong><br>
+      Temani Tumbuh hadir untuk memudahkanmu mengamati & memahami anak lewat rutinitas harian.<br>
+      Karena bagi kami, setiap momen kecil bersama anak adalah fondasi besar masa depan.</p>
+      <a class="btn" href="https://lilsmart-dev.github.io/Temanitumbuh/tes-sensorik.html">Observasi Anak Sekarang</a>
+    </div>
 
-    <p>💡 <span class="highlight">Cukup 10 menit untuk bantu anak tumbuh utuh</span> — dengan cinta, bukan tekanan.</p>
+    <div class="section">
+      <p><span class="emoji">🌱</span> <strong>Dibalik Temani Tumbuh</strong><br>
+      Temani Tumbuh dikembangkan oleh <strong>Siti Rahmawati S.Pd.</strong> – seorang praktisi pendidikan dan pengembang kurikulum anak usia dini yang berbasis data & observasi nyata.<br><br>
+      🎓 Berpengalaman lebih dari 10 tahun mendampingi anak, keluarga, dan guru dalam memahami pola tumbuh anak secara utuh.<br>
+      📊 Seluruh alat tes dan rekomendasi dalam platform ini dirancang berdasarkan pengamatan langsung, data perkembangan anak, serta pendekatan humanistik.</p>
+      <a class="btn" href="#">Lihat Profil Lengkap</a>
+    </div>
+
+    <div class="section">
+      <p><span class="emoji">🔒</span> <strong>Profil Tumbuh Anak (Fitur Premium)</strong><br>
+      Bangun portofolio tumbuh anakmu — lengkap, personal, dan bermanfaat jangka panjang.<br><br>
+      📌 Simpan hasil tes & aktivitas harian<br>
+      📈 Lihat grafik perkembangan & minat anak<br>
+      🎯 Rekomendasi harian yang terus disesuaikan<br>
+      👨👩👧 Bisa dibuka bersama pasangan atau guru.</p>
+      <a class="btn" href="#">Coba Versi Premium</a>
+    </div>
   </div>
-
-  <div class="section">
-    <p>🔍 <span class="highlight">Observasi Anak = Hadiah Seumur Hidup</span><br>
-    Temani Tumbuh hadir untuk memudahkanmu mengamati & memahami anak lewat rutinitas harian.</p>
-
-    <p>Karena bagi kami, setiap momen kecil bersama anak adalah fondasi besar masa depan.</p>
-    <a href="#tes">Observasi Anak</a>
-  </div>
-
-  <div class="section">
-    <p>🌱 <span class="highlight">Dibalik Temani Tumbuh</span><br>
-    Temani Tumbuh dikembangkan oleh Siti Rahmawati S.Pd. – seorang praktisi pendidikan dan pengembang kurikulum anak usia dini yang berbasis data & observasi nyata.</p>
-
-    <p>🎓 Berpengalaman lebih dari 10 tahun mendampingi anak, keluarga, dan guru dalam memahami pola tumbuh anak secara utuh.</p>
-
-    <p>📊 Seluruh alat tes dan rekomendasi dalam platform ini dirancang berdasarkan pengamatan langsung, data perkembangan anak, serta pendekatan humanistik</p>
-
-    <a href="#profil">Profil Lengkap</a>
-  </div>
-
-  <div class="section">
-    <p>🔒 <span class="highlight">Profil Tumbuh Anak (Fitur Premium)</span><br>
-    Bangun portofolio tumbuh anakmu — lengkap, personal, dan bermanfaat jangka panjang.</p>
-
-    <ul>
-      <li>📌 Simpan hasil tes & aktivitas harian</li>
-      <li>📈 Lihat grafik perkembangan & minat anak</li>
-      <li>🎯 Rekomendasi harian yang terus disesuaikan</li>
-      <li>👨👩👧 Bisa dibuka bersama pasangan atau guru.</li>
-    </ul>
-
-    <a href="#premium">Coba Versi Premium</a>
-  </div>
-
-  <div class="section" id="tes">
-    <p><span class="highlight">Pilih hosting untuk tes sensorik:</span></p>
-    <select id="hostSelect">
-      <option value="github">GitHub Pages</option>
-      <option value="carrd">Carrd</option>
-    </select>
-    <button id="startTestBtn">Mulai Tes Sensorik</button>
-  </div>
-
-  <script>
-    const btn = document.getElementById('startTestBtn');
-    const select = document.getElementById('hostSelect');
-
-    btn.addEventListener('click', () => {
-      const host = select.value;
-      let url = '';
-
-      if(host === 'github') {
-        url = 'https://lilsmart-dev.github.io/Temanitumbuh/tes-sensorik.html';
-      } else if(host === 'carrd') {
-        url = 'https://example.carrd.co/tes-sensorik'; // Ganti kalau sudah tersedia
-      }
-
-      window.open(url, '_blank');
-    });
-  </script>
-
 </body>
 </html>
