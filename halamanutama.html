@@ -14,7 +14,8 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f9f4;
       color: #2a7f62;
-      line-height: 1.6;
+      line-height: 1.8;
+      font-size: 1.6rem; /* font dasar diperbesar */
     }
     .container {
       max-width: 900px;
@@ -26,31 +27,31 @@
       padding: 40px 15px 20px;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 10rem; /* 4x lipat */
+      margin-bottom: 40px;
       font-weight: 700;
     }
     header p.subtitle {
-      font-size: 1.15rem;
+      font-size: 4.6rem; /* 4x lipat */
       color: #4a7d64;
-      margin-bottom: 30px;
-      max-width: 600px;
+      margin-bottom: 60px;
+      max-width: 2400px;
       margin-left: auto;
       margin-right: auto;
     }
     .btn-primary {
       background-color: #2a7f62;
       color: white;
-      padding: 15px 40px;
-      font-size: 1.1rem;
+      padding: 60px 160px; /* diperbesar */
+      font-size: 4.4rem; /* diperbesar */
       border: none;
-      border-radius: 8px;
+      border-radius: 32px;
       font-weight: 700;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
       transition: background-color 0.3s ease;
-      margin-bottom: 50px;
+      margin-bottom: 200px;
     }
     .btn-primary:hover {
       background-color: #23644f;
@@ -61,59 +62,120 @@
       padding: 0 15px;
     }
     section.why h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+      font-size: 7.2rem; /* 4x lipat */
+      margin-bottom: 80px;
     }
     section.why p {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      font-size: 1.1rem;
+      max-width: 2800px;
+      margin: 0 auto 120px;
+      font-size: 4.4rem; /* 4x lipat */
       color: #3c6e58;
     }
     .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
-      margin-bottom: 60px;
-      padding: 0 10px;
+      gap: 100px; /* diperbesar */
+      margin-bottom: 240px;
+      padding: 0 40px;
     }
     .feature-item {
       background: white;
       flex: 1 1 250px;
-      max-width: 300px;
-      border-radius: 12px;
-      padding: 25px 20px;
-      box-shadow: 0 4px 15px rgba(42,127,98,0.15);
+      max-width: 1200px; /* diperbesar */
+      border-radius: 48px; /* diperbesar */
+      padding: 100px 80px; /* diperbesar */
+      box-shadow: 0 16px 60px rgba(42,127,98,0.3);
       text-align: center;
       color: #2a7f62;
       font-weight: 600;
-      font-size: 1.05rem;
+      font-size: 4.2rem; /* diperbesar */
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 40px;
     }
     .feature-item span.emoji {
-      font-size: 2.5rem;
+      font-size: 10rem; /* diperbesar */
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 40px;
+    }
+    .feature-item a.btn-primary {
+      font-size: 3.6rem; /* diperbesar */
+      padding: 32px 80px;
+      margin-top: auto;
+    }
+    section.premium {
+      max-width: 2800px;
+      margin: 0 auto 100px;
+      background: #def1e3;
+      border-radius: 48px;
+      padding: 120px;
+      text-align: center;
+      color: #2a7f62;
+      font-size: 4.8rem;
+    }
+    section.premium h2 {
+      font-size: 9.6rem;
+      margin-bottom: 40px;
+    }
+    section.premium p, section.premium ul li {
+      margin-bottom: 80px;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section.premium ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 0 auto 40px;
+      max-width: 1600px;
+    }
+    section.premium a.btn-primary {
+      font-size: 4.4rem;
+      padding: 56px 128px;
     }
     footer {
       text-align: center;
       color: #607d6e;
-      font-size: 0.9rem;
-      padding: 20px 10px 10px;
+      font-size: 3.6rem;
+      padding: 80px 40px 40px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 6rem;
       }
-      .features {
-        flex-direction: column;
-        gap: 20px;
+      .btn-primary {
+        padding: 40px 120px;
+        font-size: 3rem;
       }
       .feature-item {
         max-width: 100%;
+        padding: 60px 40px;
+        font-size: 3rem;
+        border-radius: 24px;
+      }
+      .feature-item span.emoji {
+        font-size: 6rem;
+      }
+      section.premium {
+        padding: 60px;
+        font-size: 3rem;
+      }
+      section.premium h2 {
+        font-size: 5rem;
+      }
+      section.premium p, section.premium ul li {
+        margin-bottom: 40px;
+        max-width: 100%;
+      }
+      section.premium a.btn-primary {
+        font-size: 3rem;
+        padding: 40px 80px;
+      }
+      footer {
+        font-size: 2.5rem;
+        padding: 40px 20px 20px;
       }
     }
   </style>
@@ -140,42 +202,42 @@
         <span class="emoji">🧠</span>
         Tes Gaya Belajar Anak<br />
         Cari tahu apakah anak lebih nyaman belajar lewat visual, gerak, atau suara.<br />
-        <a href="tes-gaya-belajar.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+        <a href="tes-gaya-belajar.html" class="btn-primary" style="font-size:3.6rem; padding:32px 80px; margin-top:auto;">Mulai Tes</a>
       </div>
       <div class="feature-item">
         <span class="emoji">🎨</span>
         Tes Minat & Bakat Dasar<br />
         Kenali kecenderungan alamiah anak agar bisa diarahkan tanpa paksaan.<br />
-        <a href="tes-minat-bakat.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+        <a href="tes-minat-bakat.html" class="btn-primary" style="font-size:3.6rem; padding:32px 80px; margin-top:auto;">Mulai Tes</a>
       </div>
       <div class="feature-item">
         <span class="emoji">💬</span>
         Tes Kepribadian Anak<br />
         Apakah anak cenderung pemimpin? sensitif? tenang? Pahami supaya pendekatannya tepat.<br />
-        <a href="tes-kepribadian.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes</a>
+        <a href="tes-kepribadian.html" class="btn-primary" style="font-size:3.6rem; padding:32px 80px; margin-top:auto;">Mulai Tes</a>
       </div>
       <div class="feature-item">
         <span class="emoji">🔊</span>
         Tes Sensorik Anak<br />
         Amati apakah anak sangat sensitif terhadap suara, sentuhan, gerakan, atau justru kurang merespons.<br />
-        <a href="https://lilsmart-dev.github.io/Temanitumbuh/landingpagetessesnsori.html" class="btn-primary" style="font-size:0.9rem; padding: 8px 20px; margin-top:auto;">Mulai Tes Sensorik</a>
+        <a href="https://lilsmart-dev.github.io/Temanitumbuh/tes-sensorik.html" class="btn-primary" style="font-size:3.6rem; padding:32px 80px; margin-top:auto;">Mulai Tes Sensorik</a>
       </div>
     </section>
 
-    <section style="max-width: 700px; margin: 0 auto; background: #def1e3; border-radius: 12px; padding: 30px; text-align: center; color: #2a7f62;">
+    <section class="premium">
       <h2>🔒 Fitur Premium: Evaluasi Mendalam Sensorik</h2>
-      <p>📊 Butuh bantuan menyusun rencana stimulasi harian anakmu?<br />
-      Dengan versi Premium, kamu bisa:</p>
-      <ul style="list-style: none; padding-left: 0; text-align: left; margin: 0 auto 20px; max-width: 400px;">
-        <li>✅ Lihat grafik & hasil detail tiap sistem sensorik</li>
-        <li>✅ Dapat rekomendasi aktivitas harian</li>
-        <li>✅ Pantau perkembangan lewat catatan harian</li>
+      <p>Dengan fitur premium, kamu dapat:</p>
+      <ul>
+        <li>📊 Memantau hasil tes sensorik secara detail</li>
+        <li>📝 Mencatat perkembangan stimulasi harian anak</li>
+        <li>🎯 Mendapat rekomendasi latihan sesuai hasil tes</li>
+        <li>📅 Melihat grafik perkembangan sensorik anak</li>
       </ul>
-      <a href="premium.html" class="btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">Coba Premium Sekarang</a>
+      <a href="daftar-premium.html" class="btn-primary">Langganan Premium Sekarang</a>
     </section>
 
     <footer>
-      <p>💬 Semua tes kami gratis dan bisa langsung diisi.<br />Tapi kalau kamu ingin temani tumbuh anak setiap hari — kami siap bantu.</p>
+      &copy; 2025 Temani Tumbuh. Semua hak dilindungi.
     </footer>
   </div>
 </body>
