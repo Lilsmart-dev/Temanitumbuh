@@ -1,137 +1,143 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fitur Premium - Temani Tumbuh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temani Tumbuh - Tes Anak</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9faf8;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 40px 20px;
-      color: #2a7f62;
-      line-height: 1.7;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+      font-size: 7.2rem;
+    }
+    header {
+      background-color: #e3f6f5;
+      padding: 24rem 12rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 18rem;
+    }
+    header p {
+      font-size: 9.6rem;
+      max-width: 2000px;
+      margin: 8rem auto 0;
     }
     .container {
-      max-width: 760px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 32px 28px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(42,127,98,0.12);
+      padding: 24rem 12rem;
+      max-width: 6400px;
+      margin: auto;
     }
-    h1 {
-      font-size: 1.8rem;
-      text-align: center;
-      font-weight: 700;
-      margin-bottom: 0.5em;
-      color: #2a7f62;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(2000px, 1fr));
+      gap: 16rem;
     }
-    p.subtitle {
-      text-align: center;
-      font-size: 1.05rem;
-      color: #4a7d64;
-      margin-bottom: 2em;
+    .card {
+      background-color: white;
+      border-radius: 96px;
+      box-shadow: 0 16px 120px rgba(0, 0, 0, 0.1);
+      padding: 16rem;
     }
-    .section {
-      margin-bottom: 2.8em;
-    }
-    .section h2 {
-      font-size: 1.25rem;
-      color: #2a7f62;
-      margin-bottom: 0.8em;
-    }
-    ul.features {
-      padding-left: 1.2em;
+    .card h3 {
       margin-top: 0;
-      font-size: 1rem;
-      color: #3c6e58;
+      font-size: 12rem;
     }
-    ul.features li {
-      margin-bottom: 0.9em;
+    .card p {
+      font-size: 8.8rem;
     }
-    .btn-group {
-      text-align: center;
-      margin-top: 1.5em;
-    }
-    .btn-primary {
-      background-color: #2a7f62;
-      color: #ffffff;
-      padding: 13px 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
+    .btn {
       display: inline-block;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      margin-top: 8rem;
+      background-color: #38b6ff;
+      color: white;
+      padding: 6rem 12rem;
+      border: none;
+      border-radius: 64px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 8rem;
     }
-    .btn-primary:hover {
-      background-color: #23644f;
+    .premium {
+      background-color: #fff3cd;
+      padding: 16rem;
+      margin-top: 24rem;
+      border-radius: 96px;
     }
-    p.note {
-      font-size: 0.95rem;
+    .premium h3 {
+      font-size: 12rem;
+    }
+    .premium p,
+    .premium li {
+      font-size: 8rem;
+    }
+    .footer-note {
+      margin-top: 16rem;
       text-align: center;
-      color: #607d6e;
-      margin-top: 2em;
+      font-style: italic;
+      color: #666;
+      font-size: 8rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Temukan Cara Anak Belajar & Tumbuh Bahagia</h1>
+    <p>Berbagai tes sederhana untuk membantu kamu memahami anak dengan utuh – dari potensi, gaya belajar, sampai kebutuhan sensoriknya.</p>
+  </header>
+
   <div class="container">
-    <h1>🧡 Temani Tumbuh Premium</h1>
-    <p class="subtitle">
-      Dukung tumbuh kembang anak dengan cara yang menyenangkan, personal, dan terarah.
-    </p>
-
-    <div class="section">
-      <h2>🌿 Premium Digital – Untuk Keluarga di Rumah</h2>
-      <ul class="features">
-        <li>✅ Evaluasi mendalam setiap sistem sensoris anak</li>
-        <li>✅ Rencana stimulasi harian otomatis & praktis</li>
-        <li>✅ Grafik perkembangan anak real-time</li>
-        <li>✅ Rekomendasi aktivitas rumah berdasarkan hasil tes</li>
-        <li>✅ Video panduan + planner WhatsApp mingguan</li>
-        <li>✅ Bisa untuk anak usia 6 bulan – 7 tahun</li>
-      </ul>
-      <p><strong>💰 Mulai dari Rp xx.xxx / bulan</strong></p>
-      <div class="btn-group">
-        <a href="daftar-premium.html" class="btn-primary">➡️ Coba Sekarang</a>
+    <div class="grid">
+      <div class="card">
+        <h3>Tes Gaya Belajar Anak</h3>
+        <p>Cari tahu apakah anak lebih nyaman belajar lewat visual, gerak, atau suara.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Minat & Bakat Dasar</h3>
+        <p>Kenali kecenderungan alamiah anak agar bisa diarahkan tanpa paksaan.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Kepribadian Anak</h3>
+        <p>Apakah anak cenderung pemimpin? sensitif? tenang? Pahami supaya pendekatannya tepat.</p>
+        <a class="btn" href="#">Mulai Tes</a>
+      </div>
+      <div class="card">
+        <h3>Tes Sensorik Anak</h3>
+        <p>Amati apakah anak sangat sensitif terhadap suara, sentuhan, gerakan, atau justru kurang merespons.</p>
+        <a class="btn" href="#">Mulai Tes Sensorik</a>
+      </div>
+      <div class="card">
+        <h3>Tes Pengamatan</h3>
+        <p>Gunakan tes ini untuk mengamati kemampuan anak berdasarkan usia mereka.</p>
+        <a class="btn" href="#">Mulai Tes Pengamatan</a>
+      </div>
+      <div class="card">
+        <h3>Tes Pengamatan Perkembangan Anak</h3>
+        <p>Gunakan tes ini untuk mengamati kemampuan anak berdasarkan usia mereka.</p>
+        <a class="btn" href="#">Mulai Pengamatan</a>
       </div>
     </div>
 
-    <div class="section">
-      <h2>🧸 Premium Arena Bermain – Observasi Sekaligus Utama</h2>
-      <ul class="features">
-        <li>✅ Observasi oleh tim ahli saat anak bermain</li>
-        <li>✅ Laporan mini perkembangan sensoris & sosial</li>
-        <li>✅ Tips stimulasi lanjutan di rumah</li>
-        <li>✅ Diskon untuk layanan digital</li>
-        <li>✅ Cocok untuk anak usia 1–6 tahun</li>
+    <div class="premium">
+      <h3>🔒 Evaluasi Mendalam Sensorik (Premium)</h3>
+      <p>📊 Butuh bantuan menyusun rencana stimulasi harian anakmu?</p>
+      <ul>
+        <li>Lihat grafik & hasil detail tiap sistem sensorik</li>
+        <li>Dapat rekomendasi aktivitas harian</li>
+        <li>Pantau perkembangan lewat catatan harian</li>
       </ul>
-      <p><strong>💰 Rp 25.000 – 75.000 / sesi anak</strong><br />
-         📍 Tersedia di Kidzoona, Playtopia, Miniapolis</p>
-      <div class="btn-group">
-        <a href="lokasi-arena.html" class="btn-primary">➡️ Lihat Jadwal Lokasi</a>
-      </div>
+      <a class="btn" href="#">Coba Premium Sekarang</a>
     </div>
 
-    <div class="section">
-      <h2>✨ Bundling Hemat</h2>
-      <ul class="features">
-        <li>🎁 Gabungkan akses digital & kunjungan ke arena bermain</li>
-        <li>🎁 Dapatkan diskon spesial + bonus video aktivitas keluarga</li>
-      </ul>
-      <div class="btn-group">
-        <a href="bundling.html" class="btn-primary">➡️ Cek Paket Bundling</a>
-      </div>
+    <div class="footer-note">
+      💬 Semua tes kami gratis dan bisa langsung diisi. Tapi kalau kamu ingin temani tumbuh anak setiap hari — kami siap bantu.
     </div>
-
-    <p class="note">
-      Semua tes dasar tetap gratis. Fitur Premium hadir untuk kamu yang ingin mendampingi tumbuh kembang anak secara konsisten, menyenangkan, dan penuh arah.
-    </p>
   </div>
 </body>
 </html>
