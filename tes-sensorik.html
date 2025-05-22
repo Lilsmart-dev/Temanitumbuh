@@ -3,89 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fitur Premium - Temani Tumbuh</title>
+  <title>Tes Sensorik Anak - Pilih Usia | Temani Tumbuh</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9faf8;
+      background: #f0f6f4;
       margin: 0;
-      padding: 40px 20px;
-      color: #2a7f62;
+      padding: 20px;
+      color: #2d3a3a;
       line-height: 1.6;
     }
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(42,127,98,0.15);
-      text-align: center;
-    }
     h1 {
+      text-align: center;
+      color: #2a7f62;
       margin-bottom: 0.3em;
-      font-weight: 700;
     }
     p.subtitle {
-      color: #4a7d64;
-      margin-bottom: 2em;
+      text-align: center;
       font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 0.4em;
     }
-    ul.features {
-      text-align: left;
-      margin-bottom: 2em;
-      padding-left: 1.2em;
-      color: #3c6e58;
+    p.refleksi-info {
+      text-align: center;
       font-size: 1rem;
+      color: #3a5d47;
+      margin: 0 0 2em 0;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    ul.features li {
-      margin-bottom: 1em;
-      line-height: 1.4;
+    .age-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Tetapkan 3 kolom tetap */
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto 3em;
     }
-    .btn-primary {
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.8em 1.5em;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(42, 127, 98, 0.3);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #2a7f62;
+      font-size: 1.4rem;
+      margin-bottom: 0.5em;
+    }
+    .card p {
+      flex-grow: 1;
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 1.2em;
+    }
+    .btn {
+      align-self: flex-start;
       background-color: #2a7f62;
       color: white;
       border: none;
-      padding: 14px 32px;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+      padding: 0.6em 1.2em;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
       text-decoration: none;
-      display: inline-block;
+      transition: background-color 0.3s ease;
     }
-    .btn-primary:hover {
+    .btn:hover {
       background-color: #23644f;
     }
-    .note {
-      margin-top: 2em;
-      font-size: 0.9rem;
-      color: #607d6e;
+    /* Beda style untuk kartu Refleksi */
+    .card.refleksi {
+      background: #d9f0e1;
+      border: 2px solid #2a7f62;
+      grid-column: span 3; /* Melebar ke 3 kolom penuh */
+    }
+    .card.refleksi:hover {
+      box-shadow: 0 10px 25px rgba(42, 127, 98, 0.5);
+      border-color: #1f5e44;
+    }
+    .footer-cta {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #2a7f62;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+    .footer-cta a {
+      color: #2a7f62;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .footer-cta a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 900px) {
+      .age-grid {
+        grid-template-columns: repeat(2, 1fr); /* dua kolom di layar sedang */
+      }
+      .card.refleksi {
+        grid-column: span 2; /* tetap menyesuaikan jadi 2 kolom */
+      }
+    }
+    @media (max-width: 600px) {
+      .age-grid {
+        grid-template-columns: 1fr; /* satu kolom di layar kecil */
+      }
+      .card.refleksi {
+        grid-column: span 1; /* penuh 1 kolom */
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Fitur Premium Temani Tumbuh</h1>
-    <p class="subtitle">
-      Bantu anak tumbuh dengan lebih personal, terstruktur, dan penuh cinta.  
-      Dengan fitur premium, kamu bisa memantau dan merencanakan stimulasi anak setiap hari dengan mudah.
-    </p>
 
-    <ul class="features">
-      <li>📊 Grafik & evaluasi mendalam tiap sistem sensorik anak</li>
-      <li>🗓️ Rencana stimulasi harian yang praktis dan sesuai kebutuhan anak</li>
-      <li>📝 Catatan perkembangan harian untuk melihat progres secara real-time</li>
-      <li>💡 Rekomendasi aktivitas stimulasi yang tepat berdasarkan hasil tes</li>
-      <li>🤝 Akses ke konten eksklusif kolaborasi dengan Kidzona</li>
-    </ul>
+  <h1>Tes Sensorik Anak</h1>
+  <p class="subtitle">Pilih rentang usia anakmu agar hasil tes sesuai dan akurat.</p>
+  <p class="refleksi-info">
+    Gunakan Tes Refleksi Perubahan Sensorik Anak secara rutin untuk memantau perkembangan setelah stimulasi di rumah.
+  </p>
 
-    <a href="daftar-premium.html" class="btn-primary">Coba Premium Sekarang</a>
+  <div class="age-grid">
+    <a href="https://forms.fillout.com/t/7SUmQvLdgYus" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>6 Bulan – 1 Tahun</h2>
+      <p>Kenali kebutuhan sensorik bayi usia 6 bulan hingga 1 tahun.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
+    <a href="https://forms.fillout.com/t/9k56dmh89fus" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>1 – 2 Tahun</h2>
+      <p>Amati respons sensorik dan stimulasi penting untuk balita 1-2 tahun.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
+    <a href="https://forms.fillout.com/t/mTQXEdemsaus" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>2 – 3 Tahun</h2>
+      <p>Tes untuk anak usia 2-3 tahun dengan fokus pada perkembangan sensorik.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
+    <a href="https://forms.fillout.com/t/qgp8q9Nua6us" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>3 – 4 Tahun</h2>
+      <p>Pahami lebih dalam kebutuhan sensorik anak usia 3-4 tahun.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
+    <a href="https://forms.fillout.com/t/kdDDBwxUybus" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>5 – 7 Tahun</h2>
+      <p>Tes sensorik untuk anak usia TK B hingga awal SD, fokus pada regulasi dan fokus belajar.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
+    <a href="https://forms.fillout.com/t/nYNNoAnfPeus" class="card" target="_blank" rel="noopener noreferrer">
+      <h2>8 – 10 Tahun</h2>
+      <p>Tes sensorik untuk anak usia 8-10 tahun, mendukung kesiapan belajar dan pengaturan emosi.</p>
+      <span class="btn">Mulai Tes</span>
+    </a>
 
-    <p class="note">
-      Semua tes dasar tetap gratis. Premium untuk kamu yang ingin temani tumbuh anak secara konsisten dan terarah.
-    </p>
+    <a href="https://forms.fillout.com/t/72REncJvWRus" class="card refleksi" target="_blank" rel="noopener noreferrer">
+      <h2>Refleksi Perubahan Sensorik</h2>
+      <p>Lakukan tes refleksi mingguan untuk melihat perkembangan anak setelah stimulasi di rumah.</p>
+      <span class="btn">Tes Refleksi</span>
+    </a>
   </div>
+
+  <p class="footer-cta">
+  Belum yakin? Semua tes gratis dan mudah diisi.<br />
+  Untuk rencana stimulasi dan evaluasi harian, cek <a href="https://lilsmart-dev.github.io/Temanitumbuh/premium.html" target="_blank" rel="noopener noreferrer">Fitur Premium</a>.
+</p>
+
+
 </body>
 </html>
