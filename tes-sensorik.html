@@ -3,139 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tes Sensorik Anak - Pilih Usia | Temani Tumbuh</title>
+  <title>Fitur Premium - Temani Tumbuh</title>
   <style>
-    /* Reset & basic */
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f6f4;
+      background: #f9faf8;
       margin: 0;
-      padding: 20px;
-      color: #2d3a3a;
+      padding: 40px 20px;
+      color: #2a7f62;
       line-height: 1.6;
     }
-    h1 {
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(42,127,98,0.15);
       text-align: center;
-      color: #2a7f62;
+    }
+    h1 {
       margin-bottom: 0.3em;
+      font-weight: 700;
     }
     p.subtitle {
-      text-align: center;
-      font-size: 1.1rem;
-      color: #555;
+      color: #4a7d64;
       margin-bottom: 2em;
+      font-size: 1.1rem;
     }
-
-    .age-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto 3em;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 1.8em 1.5em;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: box-shadow 0.3s ease;
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit;
-    }
-    .card:hover {
-      box-shadow: 0 10px 25px rgba(42, 127, 98, 0.3);
-    }
-    .card h2 {
-      margin-top: 0;
-      color: #2a7f62;
-      font-size: 1.4rem;
-      margin-bottom: 0.5em;
-    }
-    .card p {
-      flex-grow: 1;
-      color: #555;
+    ul.features {
+      text-align: left;
+      margin-bottom: 2em;
+      padding-left: 1.2em;
+      color: #3c6e58;
       font-size: 1rem;
-      margin-bottom: 1.2em;
     }
-    .btn {
-      align-self: flex-start;
+    ul.features li {
+      margin-bottom: 1em;
+      line-height: 1.4;
+    }
+    .btn-primary {
       background-color: #2a7f62;
       color: white;
       border: none;
-      padding: 0.6em 1.2em;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-align: center;
-      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
       transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
     }
-    .btn:hover {
+    .btn-primary:hover {
       background-color: #23644f;
     }
-
-    /* Footer ajakan */
-    .footer-cta {
-      text-align: center;
-      font-size: 1.1rem;
-      color: #2a7f62;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 400px) {
-      body {
-        padding: 15px 10px;
-      }
+    .note {
+      margin-top: 2em;
+      font-size: 0.9rem;
+      color: #607d6e;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Fitur Premium Temani Tumbuh</h1>
+    <p class="subtitle">
+      Bantu anak tumbuh dengan lebih personal, terstruktur, dan penuh cinta.  
+      Dengan fitur premium, kamu bisa memantau dan merencanakan stimulasi anak setiap hari dengan mudah.
+    </p>
 
-  <h1>Tes Sensorik Anak</h1>
-  <p class="subtitle">Pilih rentang usia anakmu agar hasil tes sesuai dan akurat.</p>
+    <ul class="features">
+      <li>📊 Grafik & evaluasi mendalam tiap sistem sensorik anak</li>
+      <li>🗓️ Rencana stimulasi harian yang praktis dan sesuai kebutuhan anak</li>
+      <li>📝 Catatan perkembangan harian untuk melihat progres secara real-time</li>
+      <li>💡 Rekomendasi aktivitas stimulasi yang tepat berdasarkan hasil tes</li>
+      <li>🤝 Akses ke konten eksklusif kolaborasi dengan Kidzona</li>
+    </ul>
 
-  <div class="age-grid">
-    <a href="tes-sensorik-6-12bulan.html" class="card">
-      <h2>6 Bulan – 1 Tahun</h2>
-      <p>Kenali kebutuhan sensorik bayi usia 6 bulan hingga 1 tahun.</p>
-      <span class="btn">Mulai Tes</span>
-    </a>
+    <a href="daftar-premium.html" class="btn-primary">Coba Premium Sekarang</a>
 
-    <a href="tes-sensorik-1-2tahun.html" class="card">
-      <h2>1 – 2 Tahun</h2>
-      <p>Amati respons sensorik dan stimulasi penting untuk balita 1-2 tahun.</p>
-      <span class="btn">Mulai Tes</span>
-    </a>
-
-    <a href="tes-sensorik-2-3tahun.html" class="card">
-      <h2>2 – 3 Tahun</h2>
-      <p>Tes untuk anak usia 2-3 tahun dengan fokus pada perkembangan sensorik.</p>
-      <span class="btn">Mulai Tes</span>
-    </a>
-
-    <a href="tes-sensorik-3-4tahun.html" class="card">
-      <h2>3 – 4 Tahun</h2>
-      <p>Pahami lebih dalam kebutuhan sensorik anak usia 3-4 tahun.</p>
-      <span class="btn">Mulai Tes</span>
-    </a>
-
-    <!-- Bisa tambah usia lain sesuai kebutuhan -->
-
+    <p class="note">
+      Semua tes dasar tetap gratis. Premium untuk kamu yang ingin temani tumbuh anak secara konsisten dan terarah.
+    </p>
   </div>
-
-  <p class="footer-cta">
-    Belum yakin? Semua tes gratis dan mudah diisi.  
-    Untuk rencana stimulasi dan evaluasi harian, cek <a href="premium.html" style="color:#2a7f62; font-weight:bold;">Fitur Premium</a>.
-  </p>
-
 </body>
 </html>
